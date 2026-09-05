@@ -1,1 +1,177 @@
 # -ecommerce-store
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nova Store — modern everyday essentials.">
+  <title>Nova Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#">NOVA<span>.</span></a>
+
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button id="cartButton" class="cart-btn">
+      Cart <b id="cartCount">0</b>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+
+  <div class="hero-copy">
+    <p class="eyebrow">CURATED FOR EVERYDAY</p>
+
+    <h1>
+      Better things.<br>
+      <i>Simply chosen.</i>
+    </h1>
+
+    <p>
+      Useful, stylish essentials selected for modern everyday life.
+    </p>
+
+    <a class="primary" href="#shop">
+      Shop collection
+    </a>
+  </div>
+
+  <div class="hero-art">
+    <span>N</span>
+    <small>NEW SEASON</small>
+    <strong>Minimal. Useful. Yours.</strong>
+  </div>
+
+</section>
+
+
+<section id="categories" class="categories">
+
+  <button class="active" data-category="All">
+    All
+  </button>
+
+  <button data-category="Tech">
+    Tech
+  </button>
+
+  <button data-category="Lifestyle">
+    Lifestyle
+  </button>
+
+  <button data-category="Home">
+    Home
+  </button>
+
+</section>
+
+
+<section id="shop" class="shop">
+
+  <div class="heading">
+
+    <div>
+      <p class="eyebrow">OUR PICKS</p>
+      <h2>Shop the collection</h2>
+    </div>
+
+    <input
+      id="search"
+      type="search"
+      placeholder="Search products..."
+    >
+
+  </div>
+
+  <div id="products" class="products"></div>
+
+</section>
+
+
+<section id="about" class="about">
+
+  <div>
+    <p class="eyebrow">NOVA STORE</p>
+
+    <h2>
+      Designed around what you actually need.
+    </h2>
+  </div>
+
+  <p>
+    We keep shopping simple: useful products,
+    clear information and an easy checkout.
+    This is the first free foundation of our
+    ecommerce project.
+  </p>
+
+</section>
+
+</main>
+
+
+<aside id="drawer" class="drawer">
+
+  <div class="drawer-head">
+
+    <h2>Your cart</h2>
+
+    <button id="closeCart">
+      ×
+    </button>
+
+  </div>
+
+  <div id="cartItems"></div>
+
+  <div class="drawer-foot">
+
+    <div>
+      <span>Total</span>
+      <strong id="total">₹0</strong>
+    </div>
+
+    <button id="checkout" class="primary full">
+      Continue to checkout
+    </button>
+
+    <small>
+      Demo checkout for now.
+      Orders and Supabase will be connected next.
+    </small>
+
+  </div>
+
+</aside>
+
+
+<div id="overlay" class="overlay"></div>
+
+
+<footer>
+
+  <span>NOVA.</span>
+
+  <small>
+    Free ecommerce project
+  </small>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
